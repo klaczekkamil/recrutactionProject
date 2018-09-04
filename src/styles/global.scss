@@ -1,0 +1,18 @@
+:global{
+    @import 'resources/variables.scss';
+    @import 'components/_body.scss';
+
+    html{
+        font-size:62.5%;
+        line-height: 62.5%;
+    }
+    body {
+        min-height: 100vh;
+        background:#fefefe;
+        font-family: $font-primary;
+    
+    }
+
+    @import 'components/_buttons.scss';
+}
+
