@@ -14,6 +14,18 @@ body {
         min-height: calc( 100vh - 210px - 142px);
         background-color: #f8f8f8;
         padding: 45px 0;
+
+        @media (max-height: 1199px) {
+            min-height: calc( 100vh - 178px - 142px);
+        }
+
+        @media (max-height: 991px) {
+            min-height: calc( 100vh - 164px - 142px);
+        }
+
+        @media (max-height: 767px) {
+            min-height: calc( 100vh - 161px - 142px);
+        }
     }
 }
 
