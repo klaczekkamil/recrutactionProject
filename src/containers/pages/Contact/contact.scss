@@ -1,0 +1,58 @@
+:global {
+    .main {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .form-group {
+        margin: 0;
+        position: relative;
+        padding-top: 30px;
+
+        label {
+            position: absolute;
+            top: calc( 100% - 36px);
+            margin: 0;
+            font-size: 1.6rem;
+            color: $gray;
+            transition: all 0.5s;
+        }
+
+        .form-control {
+            padding: 12px 0;
+            border: none;
+            font-size: 1.4rem;
+            border-bottom: 1px solid $gray;
+            border-radius: 0;
+            transition: all 0.5s;
+
+            &:hover, &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:focus {
+                border-color: $orange;
+            }
+        }
+
+        &.active, &:hover {
+            label {
+                top: 10px;
+                font-size: 1.2rem;
+            }
+        }
+
+        &.isInvalid {
+            label {
+                color: red;
+            }
+
+            .form-control {
+                border-bottom-color: red;
+            }
+        }
+    }
+}
+

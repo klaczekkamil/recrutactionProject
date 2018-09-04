@@ -1,0 +1,17 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+$font-primary: 'Roboto', sans-serif;
+
+$orange: #F4762B;
+$gray: #747474;
+$dark-gray: #282828;

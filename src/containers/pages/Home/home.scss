@@ -1,0 +1,67 @@
+.homePage {
+    .grid {
+        margin: 0 -24px;
+        display: flex;
+
+        @media (max-width: 991px) {
+            margin: 0 -10px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            padding: 0 24px;
+
+            @media (max-width: 991px) {
+                padding: 0 10px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 0;
+
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+
+            .body {
+                box-shadow: 0 0 5px 0 rgba(116, 116, 116, 0.7);
+                border-radius: 2px;
+                overflow: hidden;
+
+                .photo {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .content {
+                    padding: 40px 25px;
+
+                    @media (max-width: 767px) {
+                        padding: 15px;
+                    }
+
+                    .title {
+                        font-size: 2.4rem;
+                        margin-bottom: 20px;
+
+                        @media (max-width: 767px) {
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .description {
+                        font-size: 1.6rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

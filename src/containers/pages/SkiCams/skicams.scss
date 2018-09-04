@@ -1,0 +1,77 @@
+.skiCamsPage {
+    .camGrid {
+        display: flex;
+        margin-left: -60px;
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1199px) {
+            margin-left: -20px;
+        }
+
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
+
+        .camWrapp {
+            width: calc((100% / 2) - 60px);
+            margin-left: 60px;
+            box-shadow: 0 0 5px 0 rgba(116, 116, 116, 0.7);
+            border-radius: 2px;
+            overflow: hidden;
+            background-color: #ffffff;
+
+            @media (max-width: 1199px) {
+                width: calc((100% / 2) - 20px);
+                margin-left: 20px;
+            }
+
+            @media (max-width: 991px) {
+                width: 100%;
+                margin-left: 0;
+
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+
+            .header {
+                padding: 10px 15px;
+
+                .date {
+                    color: #b4b4b4;
+                    font-size: 1.4rem;
+                    line-height: 1em;
+                    margin: 0;
+
+                    @media (max-width: 991px) {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .title {
+                    color: $gray;
+                    margin: 0;
+                    font-size: 2.5rem;
+
+                    @media (max-width: 991px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .photosWrapp {
+                text-align: center;
+
+                img {
+                    display: inline-block;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
