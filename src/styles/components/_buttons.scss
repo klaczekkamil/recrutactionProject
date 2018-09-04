@@ -1,0 +1,13 @@
+.btn {
+    padding: 15px 40px;
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1em;
+
+    &:hover, &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}

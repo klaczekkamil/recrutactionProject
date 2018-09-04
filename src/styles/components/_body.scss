@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+    line-height: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: #fefefe;
+    font-family: $font-primary;
+    overflow-x: hidden;
+    transition: .4s transform;
+
+    .main {
+        min-height: calc( 100vh - 210px - 142px);
+        background-color: #f8f8f8;
+        padding: 45px 0;
+    }
+}
+
+@media (min-width: 1330px) {
+    .container {
+        max-width: 1310px;
+    }
+}
+
